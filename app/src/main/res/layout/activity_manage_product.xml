@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    tools:context=".ManageProduct"
+    android:orientation="vertical">
+
+ <EditText
+     android:id="@+id/nameProduct"
+     style="@style/input"
+     android:hint="Tên sản phẩm..."
+     />
+    <EditText
+        android:id="@+id/priceProduct"
+        style="@style/input"
+        android:hint="Giá bán..."
+        />
+    <ImageButton
+        android:id="@+id/imgProduct"
+        android:layout_height="200dp"
+        android:layout_width="350dp"
+        android:scaleType="fitXY"
+        android:hint="Hình ảnh..."
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/descriptionProduct"
+        style="@style/input"
+        android:hint="Mô tả..."
+        android:layout_height="70dp"
+        />
+    <EditText
+        android:id="@+id/quantityProduct"
+        style="@style/input"
+        android:hint="Số lượng..."
+        android:inputType="number"
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        style="@style/input"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+
+        >
+       <RadioButton android:id="@+id/isBusiness"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Kinh doanh"
+           android:layout_marginRight="20dp"/>
+       <RadioButton android:id="@+id/unBusiness"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Ngừng kinh doanh" />
+    </RadioGroup>
+   <Button
+       android:id="@+id/btnUpdate"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="Cập Nhật"
+       android:layout_gravity="center_horizontal"
+       android:background="#8EE1EC"
+       ></Button>
+</LinearLayout>
